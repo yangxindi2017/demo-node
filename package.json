@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yangxindi2017/demo-node/issues"
   },
-  "homepage": "https://github.com/yangxindi2017/demo-node#readme"
+  "homepage": "https://github.com/yangxindi2017/demo-node#readme",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
 }
