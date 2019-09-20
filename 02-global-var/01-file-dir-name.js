@@ -2,21 +2,11 @@
 console.log('dir name:',__dirname);
 console.log('file name:',__filename);
 
-//operate data file/
-//var file = __dirname + '/data/db.xml';
-//console.log('file name:',file);
-
-//window data file
-//file = __dirname + '\\data\\db.xml';
-//console.log('file name in window:',file);
-
-//const path = require('path');
-//file = path.join(__dirname,'data','db.xml');
-//console.log(file);
-
-//
+//方案一，没有考虑跨平台
 //var file = __dirname + '/view/base.html/';
 
+
+//方案二，代码复杂，平台考虑不全面
 var file;
 switch(process,platform){
   case "linux":
@@ -28,3 +18,19 @@ switch(process,platform){
     default;
       file = "error";
 }
+
+//方案三：最好
+//const path = require('path');
+//file = path.join(__dirname,'data','db.xml');
+//console.log(file);
+
+//window data file
+//file = __dirname + '\\data\\db.xml';
+//console.log('file name in window:',file);
+//operate data file/
+//var file = __dirname + '/data/db.xml';
+//console.log('file name:',file);
+
+
+
+

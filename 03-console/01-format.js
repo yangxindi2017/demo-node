@@ -17,5 +17,7 @@ log('qq:',user.qq)
 log('qq:'+user.qq);
 log(`qq:${user.qq}`);
 
+console.error('Error!something wrong!');
+
 
 
