@@ -16,12 +16,10 @@ function get(){
     //pront response body
     res.pipe(process.stdout);
 
-     if(res.statusCode<400 && res.statusCode >= 300){
-      
-       get(res.headers.location);
-      }
-
-    });  
+    if(res.statusCode<400 && res.statusCode >= 300){    
+      get(res.headers.location);
+    }
+  });  
 }
 
 get(addr);

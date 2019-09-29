@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "template.js",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.14.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangxindi2017/demo-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangxindi2017/demo-node/issues"
+  },
+  "homepage": "https://github.com/yangxindi2017/demo-node#readme"
+}
