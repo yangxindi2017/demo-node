@@ -8,6 +8,6 @@ fs.readFile(file,function(err,data){
     console.log(err.message);
     process.exit(1);//非0的退出码
   }else{
-  console.log(data.toString('utf8'));
+    console.log(data.toString('utf8'));
   }
 });

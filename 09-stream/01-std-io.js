@@ -13,6 +13,6 @@ stdin.on('data',function(data){
 
 //不需要end，因为输出流不需要关闭
 //stdin.on('end',function(){
-  //stdout.end();
+//stdout.end();
 //})
 

@@ -11,12 +11,12 @@ setInterval(function(){
 
 setTimeout(function(){
   e.emit('bye');
-},5000)
+},5000);
 
 e.on('hello',function(){
-  console.log('hello event emit!')
+  console.log('hello event emit!');
 });
 e.on('bye',function(){
   console.log('goodbye！');
   process.exit();
-})
+});

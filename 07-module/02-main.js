@@ -26,6 +26,6 @@ log('r=8,circle area:',circle.area(10));
 console.dir(module);
 */
 
-var circle=requie('./02-export-object-v2')
-console.log('r=10,circle area:'circle.area(10));
+var circle=require('./02-export-object-v2');
+console.log('r=10,circle area:',circle.area(10));
 

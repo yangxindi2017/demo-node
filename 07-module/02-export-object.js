@@ -7,7 +7,7 @@ var circle = {
 
   'circumference':function(radius){
     return 2*Math.PI*radius;
-  }
+  },
   'diameter':function(radius){
     return 2 *radius;
   }

@@ -11,7 +11,7 @@ GreenStream.prototype = Write.prototype;
 GreenStream.prototype._write = function(chunk,encoding,callback){
   console.log('\033[1;32m' +chunk.toString('utf8')+ '\033[1;37m');
   callback();
-}
+};
 
 module.exports =GreenStream;
 

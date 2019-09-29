@@ -1,8 +1,7 @@
 #!/usr/bin/node
 
-const fs =require('fs');
-
-const width =16,
+const fs =require('fs'),
+      width =16,
       height =16;
 
 var pixelByteSize =width *height *4;

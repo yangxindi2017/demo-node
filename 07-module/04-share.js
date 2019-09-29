@@ -2,7 +2,7 @@
 
 var count =0;
 function Num(){
-};
+}
 
 Num.prototype.add =()=> count++;
 Num.prototype.getCount=()=>count;

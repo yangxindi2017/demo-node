@@ -1,6 +1,5 @@
 #!/usr/bin/node
-const log =console.log,
-      fs=require('fs'),
+const fs=require('fs'),
       http =require('http');
 var data =fs.readFileSync('./qr-code.jpg').toString('base64');
 //log(data);
@@ -16,8 +15,8 @@ var  html=''
     + '<img src= "data:image/jpg;base64,'+data+'">'
   + '</body>'
   + ''
-  + '</html>'
+  + '</html>';
 
-  http.createServer((req,res)=>{
-    res.end(html);
-  }).listen(8080);
+http.createServer((req,res)=>{
+  res.end(html);
+}).listen(8080);

@@ -1,5 +1,27 @@
 #!/usr/bin/node
-var argv =process.argv;
+var log= console.log,
+    arg =process.argv;
 
-var expression =process.argv[2];
-console.log(expression + '='+'%d',eval(expression));
+if(typeof(arg)==='undefined' ||
+    arg ==='--help'||
+    arg ==='-h'){
+  help();
+}else{
+  calc();
+}
+function help(){
+  const msg = ''
+    +'usage:cmd-name [OPTION] [expression]\n'
+    + 'evaluate the expression.\n'
+    + '\n'
+    + 'Mandatory arguments to long options are mandatory for short options too.\n'
+    + '  -h, --help output help information and exit\n';
+
+  log(msg);
+}
+
+function calc() {
+  log(arg + '=%s', eval(arg));
+
+}
+

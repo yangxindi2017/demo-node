@@ -11,4 +11,4 @@ function loop(){
 
 setTimeout(()=>{
   console.log('Game Over!');
-},5000)
+},5000);

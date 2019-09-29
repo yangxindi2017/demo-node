@@ -3,20 +3,21 @@ console.log('dir name:',__dirname);
 console.log('file name:',__filename);
 
 //方案一，没有考虑跨平台
-//var file = __dirname + '/view/base.html/';
+var file = __dirname + '/view/base.html/';
 
 
 //方案二，代码复杂，平台考虑不全面
-var file;
-switch(process,platform){
-  case "linux":
-    file = __dirname + "/view/base.html";
+
+switch(process.platform){
+  case 'linux':
+    file = __dirname + '/view/base.html';
     break;
-  case "win32":
-    file = __diename + "\\view\\base.html";
+  case 'win32':
+    file = __dirname + '\\view\\base.html';
     break;
-    default;
-      file = "error";
+  default:
+    file = 'error';
+    break;
 }
 
 //方案三：最好

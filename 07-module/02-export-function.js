@@ -8,11 +8,14 @@ function circle(radius){
   function circumference(){
     return 2 * Math.PI*radius;
   }
-
+  //function diameter(){
+  //return 2 *radius;
+  //}
   return {
     area:area,
-    circumference:circumference
-   }
+    circumference:circumference,
+    //diameter:diameter
+  };
 }
 console.dir(module);
 module.exports = circle;

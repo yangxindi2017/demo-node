@@ -13,4 +13,4 @@ process.on('SIGINT',()=>{
 process.on('SIGTSTP',()=>{
   log('you press ctrl-z,stop rumming');
   process.exit();
-})
+});

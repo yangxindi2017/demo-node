@@ -12,7 +12,7 @@ function circle(radius){
   return {
     area:area,
     circumference:circumference
-   }
+  };
 }
 console.dir(module);
 module.exports = circle;

@@ -2,15 +2,15 @@
 const fs=require('fs'),
       file =process.argv[2] || __filename;
 try{
-var len =fs.statSync(file).size,
-    buf = new Buffer(len),
-    fid = fs.openSync(file,'r');//1.打开对文件名称，2.打开方式
+  var len =fs.statSync(file).size,
+      buf = new Buffer(len),
+      fid = fs.openSync(file,'r');//1.打开对文件名称，2.打开方式
 
-fs.readSync(fid,buf,0,len,0);
+  fs.readSync(fid,buf,0,len,0);
 
-console.log(buf.toString('utf8'));
+  console.log(buf.toString('utf8'));
 
-fs.closeSync(fid);
+  fs.closeSync(fid);
 }
 catch(e){
   console.error(e.message);
